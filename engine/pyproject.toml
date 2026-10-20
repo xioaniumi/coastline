@@ -1,0 +1,23 @@
+[project]
+name = "coastline-engine"
+version = "0.1.0"
+description = "Geometry and CAM engine for Coastline (CR-1 planner)"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "cadquery-ocp>=7.7",
+  "rhino3dm>=8.0",
+  "opencamlib>=2023.1",
+  "pyclipper>=1.3",
+  "numpy>=1.26",
+  "trimesh>=4.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "pybind11>=2.12"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["coastline_engine"]

@@ -1,0 +1,22 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+xcuserdata/
+dist/
+*.dmg
+# engine
+engine/.venv/
+engine/build/
+engine/**/__pycache__/
+engine/.pytest_cache/
+engine/coastline_engine/_native*.so
+/build/
+*.zip
+# Vendor tool models (not redistributable)
+resources/tools/
+# local tooling
+.claude/
+CLAUDE.md
+.vscode/
+.idea/
